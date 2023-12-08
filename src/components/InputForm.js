@@ -54,7 +54,7 @@ function InputForm() {
         onChange={(e) => setDescription(e.target.value)}
         placeholder="Take a note..."
       ></textarea>
-      <button onClick={handleSave}>{editIndex !== null ? "+" : "+"}</button>
+      <button onClick={handleSave}>+</button>
     </div>
   );
 }
