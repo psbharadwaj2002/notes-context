@@ -1,0 +1,160 @@
+.App {
+  display: flex;
+}
+.App .Sidebar {
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.App .Sidebar h1 {
+  text-align: center;
+  color: #203562;
+  margin-top: 40px;
+  font-weight: 600;
+}
+.App .Sidebar button {
+  background: #203562;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.App .Display {
+  width: 75%;
+  background-color: lavender;
+  padding: 40px;
+}
+.App .Display .ima_rec {
+  margin-top: 60px;
+}
+.App .Display .ima_rec .image {
+  display: flex;
+  align-items: center;
+}
+.App .Display .ima_rec .image img {
+  margin-right: 10px;
+}
+.App .Display .ima_rec .image h3 {
+  color: #203562;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+.App .Display .ima_rec p {
+  font-size: small;
+  margin-top: 10px;
+  color: #65769b;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.App .Display .input {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  row-gap: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 300px;
+}
+.App .Display .input h1 {
+  color: #203562;
+  font-weight: 600;
+}
+.App .Display .input input,
+.App .Display .input textarea {
+  height: 10vh;
+  font-size: 30px;
+  outline: none;
+  border: none;
+  color: #2b4c92;
+  font-weight: 500;
+}
+.App .Display .input input::-moz-placeholder {
+  color: #677695;
+}
+.App .Display .input input::placeholder {
+  color: #677695;
+}
+.App .Display .input textarea::-moz-placeholder {
+  color: #677695;
+}
+.App .Display .input textarea::placeholder {
+  color: #677695;
+}
+.App .Display .input textarea {
+  font-size: 20px;
+}
+.App .Display .input button {
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: #2b4c92;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+}
+.App .Display .NoteList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 20px;
+}
+.App .Display .NoteList .note {
+  height: 220px;
+  width: 300px;
+  padding: 20px;
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(32, 53, 98, 0.25);
+  position: relative;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.App .Display .NoteList .note h2 {
+  color: #203562;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.App .Display .NoteList .note p {
+  color: #303030;
+  font-size: 14px;
+  width: 100%;
+  overflow-y: auto;
+  word-wrap: break-word;
+  font-weight: 500;
+}
+.App .Display .NoteList .note .buttons {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.App .Display .NoteList .note .buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.App .Display .NoteList .note::-webkit-scrollbar {
+  display: none;
+  /* Remove scrollbar for WebKit browsers (Chrome, Safari) */
+}/*# sourceMappingURL=styles.css.map */
