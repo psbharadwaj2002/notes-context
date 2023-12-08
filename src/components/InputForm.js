@@ -21,20 +21,20 @@ function InputForm() {
     }
   }, [editIndex, notes]);
 
+  // to save, if we are saving for 1st time, then we will directly push to store,
+  // else we will pass the index which needs to be edited, then we will edit it and will return the result
   const handleSave = () => {
     if (title && description) {
       if (editIndex === null) {
-        // If not in edit mode, add a new note
         addNote({ title, description });
       } else {
-        // If in edit mode, update the existing note
         const updatedNotes = [...notes];
         updatedNotes[editIndex] = { title, description };
         setNotes(updatedNotes);
         setEditIndex(null);
       }
 
-      // Clear the fields after adding/editing
+      // clearing after adding/editing
       setTitle("");
       setDescription("");
     }
